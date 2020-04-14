@@ -58,9 +58,9 @@
     <Compile Include="Events\Transform\PositionChangedArgs.cs" />
     <Compile Include="Events\Transform\RotationChangedArgs.cs" />
     <Compile Include="Events\Transform\ScaleChangedArgs.cs" />
-    <Compile Include="Extensions\MatrixExtensions.cs" />
-    <Compile Include="Extensions\QuaternionExtensions.cs" />
-    <Compile Include="Extensions\VectorExtensions.cs" />
+    <Compile Include="Util\Math\MatrixExtensions.cs" />
+    <Compile Include="Util\Math\QuaternionExtensions.cs" />
+    <Compile Include="Util\Math\VectorExtensions.cs" />
     <Compile Include="Factory\ShapeFactory.cs" />
     <Compile Include="Factory\ShipFactory.cs" />
     <Compile Include="Floor.cs" />

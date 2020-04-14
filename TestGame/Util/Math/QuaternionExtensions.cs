@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 
-namespace TestGame.Extensions
+namespace TestGame.Util.Math
 {
     public static class QuaternionExtensions
     {
@@ -43,11 +38,11 @@ namespace TestGame.Extensions
             }
             else if (x > 0)
             {
-                return (float) Math.Atan(y / x);
+                return (float) System.Math.Atan(y / x);
             }
             else if (x < 0)
             {
-                return (float)Math.Atan(y / x) + ((y > 0) ? MathHelper.Pi : -MathHelper.Pi);
+                return (float)System.Math.Atan(y / x) + ((y > 0) ? MathHelper.Pi : -MathHelper.Pi);
             }
 
             return 0;
@@ -57,7 +52,7 @@ namespace TestGame.Extensions
         {
             var angle = new Vector3();
             var v3 = Vector3.Normalize(pointB - pointA);
-            angle.X = (float) Math.Asin(v3.Y);
+            angle.X = (float) System.Math.Asin(v3.Y);
             angle.Y = ArcTanAngle(-v3.Z, -v3.Y);
             return angle;
         }

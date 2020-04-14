@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using TestGame.Events.Transform;
-using TestGame.Extensions;
+using TestGame.Util.Math;
 
 namespace TestGame.Components
 {

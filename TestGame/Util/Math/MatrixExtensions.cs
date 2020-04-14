@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using Jitter.LinearMath;
+﻿using Jitter.LinearMath;
 using Microsoft.Xna.Framework;
 
-namespace TestGame.Extensions
+namespace TestGame.Util.Math
 {
     public static class MatrixExtensions
     {
@@ -20,13 +14,13 @@ namespace TestGame.Extensions
                 return result;
             }
 
-            var sx = Math.Sign(matrix.M11 * matrix.M12 * matrix.M13 * matrix.M14) < 0 ? -1.0f : 1.0f;
-            var sy = Math.Sign(matrix.M21 * matrix.M22 * matrix.M23 * matrix.M24) < 0 ? -1.0f : 1.0f;
-            var sz = Math.Sign(matrix.M31 * matrix.M32 * matrix.M33 * matrix.M34) < 0 ? -1.0f : 1.0f;
+            var sx = System.Math.Sign(matrix.M11 * matrix.M12 * matrix.M13 * matrix.M14) < 0 ? -1.0f : 1.0f;
+            var sy = System.Math.Sign(matrix.M21 * matrix.M22 * matrix.M23 * matrix.M24) < 0 ? -1.0f : 1.0f;
+            var sz = System.Math.Sign(matrix.M31 * matrix.M32 * matrix.M33 * matrix.M34) < 0 ? -1.0f : 1.0f;
 
-            sx *= (float)Math.Sqrt((matrix.M11 * matrix.M11) + (matrix.M12 * matrix.M12) + (matrix.M13 * matrix.M13));
-            sy *= (float)Math.Sqrt((matrix.M21 * matrix.M21) + (matrix.M22 * matrix.M22) + (matrix.M23 * matrix.M23));
-            sz *= (float)Math.Sqrt((matrix.M31 * matrix.M31) + (matrix.M32 * matrix.M32) + (matrix.M33 * matrix.M33));
+            sx *= (float)System.Math.Sqrt((matrix.M11 * matrix.M11) + (matrix.M12 * matrix.M12) + (matrix.M13 * matrix.M13));
+            sy *= (float)System.Math.Sqrt((matrix.M21 * matrix.M21) + (matrix.M22 * matrix.M22) + (matrix.M23 * matrix.M23));
+            sz *= (float)System.Math.Sqrt((matrix.M31 * matrix.M31) + (matrix.M32 * matrix.M32) + (matrix.M33 * matrix.M33));
 
             if (sx == 0.0 || sy == 0.0 || sz == 0.0)
             {

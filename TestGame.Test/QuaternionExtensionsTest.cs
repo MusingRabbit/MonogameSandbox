@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Xna.Framework;
-using TestGame.Extensions;
+using TestGame.Util.Math;
 
 namespace TestGame.Test
 {

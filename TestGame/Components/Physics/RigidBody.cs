@@ -9,8 +9,8 @@ using Jitter.Dynamics;
 using Jitter.LinearMath;
 using Microsoft.Xna.Framework;
 using TestGame.Enums;
-using TestGame.Extensions;
 using TestGame.Objects;
+using TestGame.Util.Math;
 using JRigidBody = Jitter.Dynamics.RigidBody;
 
 namespace TestGame.Components.Physics
