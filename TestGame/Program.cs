@@ -1,8 +1,7 @@
 ﻿using System;
 
-namespace MonogameSandbox
+namespace TestGame
 {
-#if WINDOWS || LINUX
     /// <summary>
     /// The main class.
     /// </summary>
@@ -18,5 +17,4 @@ namespace MonogameSandbox
                 game.Run();
         }
     }
-#endif
 }
